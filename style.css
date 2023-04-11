@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: url("./assets/fonts/Poppins-Bold.ttf");
+    background-color:  hsl(0, 0%, 86%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image:url("./assets/images/flower.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#outterLayer{
+    width: 58.75em;
+    height: 550px;
+    background-color: hsl(0, 0%, 94%);
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#container{
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 18px 18px 180px 18px;
+    height: 450px;
+    padding: 20px;
+    /* width: 100vw; */
+    width: 33.75em;
+}
+
+#inputDiv{
+    margin-right: -5em;
+}
+
+#headerText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 2px #bababa;
+}
+
+#dayInput,
+#monthInput,
+#yearInput{
+    max-width: 50%;
+    height: 3em;
+    border-radius: 0.4em;
+    outline: none;
+    border: 1px solid rgb(216, 208, 208);
+    margin-bottom:2em ;
+    padding: 1em;
+    font-size: 17px;
+    /* box-shadow: 0px 2px #bababa; */
+}
+
+#dayInput:focus, #monthInput:focus, #yearInput:focus{
+    background: white;
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+#date{
+    font-size: 19px;
+    font-family: url("./assets/fonts/Poppins-Bold.ttf");
+    padding-left: 1em;
+}
+
+img{
+    max-width: 2em;
+    max-height: 2em;
+    align-self: center;
+}
+
+#imgDiv{
+    background-color: hsl(259, 100%, 65%);
+    max-width: 4.5em;
+    max-height: 4.5em;
+    border-radius: 100%;
+   display: flex;
+   position: absolute;
+   top: 17em;
+   right: 28em;
+   justify-content: center;
+   margin-right: 5em;
+   padding: 2em;
+   outline: none;
+   border: none;
+   align-self: center;
+   /* margin-bottom:2em ; */
+}
+
+#imgDiv:hover{
+    background-color: purple;
+}
+
+#output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+#years, #months, #days {
+    margin: 0;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    word-spacing: 2.7;
+    color: purple;
+}
+
+.attribution{
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 690px) {
+    #container{
+        max-width: 375px;
+        border-radius: 8px 8px 80px 8px;
+    }
+
+    #dayInput,
+    #monthInput,
+    #yearInput{
+        max-width: 35%;
+        height: 1.8em;
+        border-radius: 6em;
+        outline: none;
+        border: none;
+        box-shadow: 65px;
+        margin-bottom:5em ;
+        padding: 1em;
+        font-size: 14px;
+    }
+
+    #headerText{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: unset; */
+        margin-left:auto ;
+    }
+
+    #inputDiv{
+        margin-right: -5em;
+    }
+
+    img{
+        max-width: 1.4em;
+        max-height: 1.4em;
+    }
+
+    #imgDiv{
+       display: flex;
+       margin: auto;
+       position: unset;
+       align-self: center;
+       justify-content: center;
+       padding: 1.5em;
+    }
+
+    #years, #months, #days {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        word-spacing: 1.2;
+        color: darkorange;
+    }
+
+    p{
+        font-size: 15px;
+        font-family: url("./assets/fonts/Poppins-Bold.ttf");
+        padding-left: 1em;
+    }
+  }
