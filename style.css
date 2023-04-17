@@ -150,7 +150,13 @@ p{
 }
 
 @media screen and (max-width: 690px) {
+    #outterLayer{
+        margin: 5px;
+    }
+
     #container{
+        /* background-color: pink; */
+        margin: 2em;
         max-width: 375px;
         border-radius: 8px 8px 80px 8px;
     }
@@ -177,7 +183,7 @@ p{
     }
 
     #inputDiv{
-        margin-right: -5em;
+        margin-right: -5.5em;
     }
 
     img{
@@ -211,5 +217,9 @@ p{
         font-size: 15px;
         font-family: url("./assets/fonts/Poppins-Bold.ttf");
         padding-left: 1em;
+    }
+
+    .attribution{
+        bottom: 60px;
     }
   }
