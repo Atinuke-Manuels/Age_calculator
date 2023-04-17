@@ -10,9 +10,9 @@
 
 
 function age() {
-    const d1 = document.getElementById('dayInput').value;
-    const m1 = document.getElementById('monthInput').value;
-    const y1 = document.getElementById('yearInput').value;
+    let d1 = document.getElementById('dayInput').value;
+    let m1 = document.getElementById('monthInput').value;
+    let y1 = document.getElementById('yearInput').value;
 
     let date = new Date();
     let d2 = date.getDate();
@@ -66,46 +66,15 @@ function age() {
         return false;
     }
 
-
-    //function to ensure only numbers are inputted.
-
-//     function onlyNumbers(d1, m1, y1)
-// {
-  let numbers = /^[0-9]+$/;
-  if(d1.value.match(numbers) || m1.value.match(numbers) || y1.value.match(numbers))
-  {
-    return true;
-  }
-  else
-  {
-    alert("Please enter only numbers.");
-    return false;
-  }
-// }
-
-
     document.getElementById('years').innerHTML = +y+ ' ';
     document.getElementById('months').innerHTML = +m+ ' ';
     document.getElementById('days').innerHTML = +d+ ' ';
 
 }
 
-function reset() {
-  // Reset input fields
-  document.getElementById("dayInput").value = "";
-  document.getElementById("monthInput").value = "";
-  document.getElementById("yearInput").value = "";
-  
-  // Reset output values
-  document.getElementById("years").innerHTML = "--";
-  document.getElementById("months").innerHTML = "--";
-  document.getElementById("days").innerHTML = "--";
-  
-  // Clear error messages
-  document.getElementById("day_error").innerHTML = "";
-  document.getElementById("month_error").innerHTML = "";
-  document.getElementById("year_error").innerHTML= "";
-}
+// function reset() {
+//  window.location.reload(true);
+// }
 
 
 
