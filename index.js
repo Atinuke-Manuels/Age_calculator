@@ -68,10 +68,10 @@ function age() {
 
 
     //function to ensure only numbers are inputted.
-    
-    function onlyNumbers(d1, m1, y1)
-{
-  var numbers = /^[0-9]+$/;
+
+//     function onlyNumbers(d1, m1, y1)
+// {
+  let numbers = /^[0-9]+$/;
   if(d1.value.match(numbers) || m1.value.match(numbers) || y1.value.match(numbers))
   {
     return true;
@@ -81,7 +81,7 @@ function age() {
     alert("Please enter only numbers.");
     return false;
   }
-}
+// }
 
 
     document.getElementById('years').innerHTML = +y+ ' ';
