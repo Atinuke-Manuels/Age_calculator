@@ -22,21 +22,21 @@
   <header id="headerText">
     <div id="inputDiv">
       <p id="date">Day</p>
-      <input type="number" name="day" placeholder="DD" id="dayInput" minlength="1" maxlength="2" required = "required">
+      <input type="text" pattern="[0-9]*" pattern="\d{2}" required  name="day" placeholder="DD" id="dayInput" minlength="1" maxlength="2" required = "required">
           <br>
       <span id="day_error"></span>
     </div>
     
     <div id="inputDiv">
       <p id="date">Month</p>
-      <input type="number" name="month" placeholder="MM" id="monthInput" minlength="1" maxlength="2" required="required">
+      <input type="text" pattern="[0-9]*" pattern="\d{2}" required name="month" placeholder="MM" id="monthInput" minlength="1" maxlength="2" required="required">
       <br>
       <span id="month_error"></span>
     </div>
     
      <div id="inputDiv">
      <p id="date"> Year</p>
-      <input type="number" name="year" placeholder="YYYY" id="yearInput" minlength="4" maxlength="4" required="required">
+      <input type="text" pattern="[0-9]*"  pattern="\d{4}" required name="year" placeholder="YYYY" id="yearInput" minlength="4" maxlength="4" required="required">
           <br>
       <span id="year_error"></span> 
     </div>
@@ -54,7 +54,7 @@
       <p ><span id="days">--</span><span id="text">days</span></p>
     
     </div>
-   <button type="button" value="submit" id="resetButton" onclick="reset()">RESET</button>
+   <button type="button" value="reset" id="resetButton" onclick="reset()">RESET</button>
     </main>
     
     <footer>
