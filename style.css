@@ -138,6 +138,17 @@ p{
     font-size: 14px;
 }
 
+#resetButton{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#resetButton:hover{
+    background-color: green;
+}
+
 @media screen and (max-width: 690px) {
     #container{
         max-width: 375px;
